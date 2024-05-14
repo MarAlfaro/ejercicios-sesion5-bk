@@ -1,0 +1,20 @@
+{
+  "name": "ejercicios-sesion5-bk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts.js",
+    "server": "nodemon ejercicio_3.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0"
+  }
+}
