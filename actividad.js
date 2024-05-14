@@ -16,15 +16,15 @@ enviarMail = async () => {
 
     const mensaje = {
         from: 'YA24A144@transforma.edu.sv',
-        to : 'misioneslaborals@0.com',
+        to : 'misioneslaborales@gmail.com',
         subject : ' Implementación de servidor de correos.',
-        text: '¡Servidor de correo funcionando excelente! \nYancy Alfaro'
+        text: '¡Servidor de correo funcionando excelente! \nYancy Alfaro\nRepositorio: https://github.com/MarAlfaro/ejercicios-sesion5-bk.git'
     }
 
     try {
         const transport = nodemailer.createTransport(config);
         const info = await transport.sendMail(mensaje);
-        console.log('Correo enviado:', info);
+        console.log('Correo enviado:', info.messageId);
     } catch (error) {
         console.error('Error al enviar el correo:', error);
     }
